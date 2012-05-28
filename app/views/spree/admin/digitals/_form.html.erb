@@ -7,7 +7,7 @@
         <%= f.field_container :current_file do %>
           <strong><%=t 'current_file' %>:</strong><br/>
           <% if variant.digital? %>
-            <%= render variant.digital %><%=  %>
+            <%= render "digital", :digital => variant.digital %><%=  %>
           <% else %>
             <%=t 'none' %>
           <% end %>
